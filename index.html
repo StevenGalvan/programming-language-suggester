@@ -6,40 +6,45 @@
   </head>
 <body>
   <h1>Welcome to the Programming Language Suggestion Tool!</h1>
-  <p><em>Fill out the fields in the form below to see which programming language is the best for you. Be sure to choose 1 option from each question.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
+  <p><em>Fill out the fields in the form below to see which programming language is the best for you. Be sure to choose 1 option from each dropdown.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
 
   <form id="radio-form">
     <label>
     <!--Question 1-->
     <h3>Choose a Movie Genre:</h3>
-    <input type="radio" name="genre" value="romance" id="rom" checked>
-    <label for="romance">Romance only!</label><br>
-    <input type="radio" name="genre" value="scifi" id="sci">
-    <label for="scifi">Sci-Fi is the key to my heart!</label><br>
+    <select id="movie">
+      <option></option>
+      <option value="3">Action</option>
+      <option value="1">Comedy</option>
+    </select>
     <!--Question 2-->
     <h3>Choose a Season:</h3>
-    <input type="radio" name="season" value="winter" id="win">
-    <label for="winter">Winter vibes only!</label><br>
-    <input type="radio" name="season" value="summer" id="sum">
-    <label for="summer">Summer Summer Summer!</label><br>
+    <select id="season">
+      <option></option>
+      <option value="1">Winter</option>
+      <option value="0">Summer</option>
+    </select>
     <!--Question 3-->
     <h3>Choose a Food:</h3>
-    <input type="radio" name="food" value="pizza" id="piz">
-    <label for="pizza">Pizza is my jam!</label><br>
-    <input type="radio" name="food" value="sushi" id="sus">
-    <label for="sushi">Sushi until I'm gone.</label><br>
+    <select id="food">
+      <option></option>
+      <option value="2">Pizza</option>
+      <option value="1">Sushi</option>
+    </select>
     <!--Question 4-->
     <h3>Choose a Desert:</h3>
-    <input type="radio" name="dessert" value="pie" id="pie">
-    <label for="pie">Pie for the Win!</label><br>
-    <input type="radio" name="dessert" value="cake" id="cak">
-    <label for="cake">Cake all day!</label><br>
+    <select id="dessert">
+      <option></option>
+      <option value="0">Pie</option>
+      <option value="1">Cake</option>
+    </select>
     <!--Question 5-->
     <h3>Choose an Animal:</h3>
-    <input type="radio" name="pet" value="dog" id="dog">
-    <label for="dog">Dog (ruff ruff)</label><br>
-    <input type="radio" name="pet" value="cat" id="cat">
-    <label for="cat">Cat (OK, prrrrr)</label><br><br>
+    <select id="food">
+      <option></option>
+      <option value="0">Dog</option>
+      <option value="1">Cat</option>
+    </select><br><br>
     <!--Here is where my submit button will be-->
     <button type="submit">Show My Results!</button>
   </form>
