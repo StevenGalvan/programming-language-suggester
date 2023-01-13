@@ -6,44 +6,57 @@
   </head>
 <body>
   <h1>Welcome to the Programming Language Suggestion Tool!</h1>
-  <h2><em>Fill out the fields in the form below to see which programming language is the best for you. Be sure to fill out each field. Any blank fields will trigger an error message.</em></h2>
+  <p><em>Fill out the fields in the form below to see which programming language is the best for you. Be sure to choose 1 option from each question.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
 
   <form id="radio-form">
     <label>
-    <h3>What is your favorite type of movie genere?</h3>
-    <input type="radio" name="genre" value="horror" id="hor" checked>
-    <label for="hor">Horror just hits different...</label><br>
-    <input type="radio" name="genre" value="romance" id="rom">
+    <!--Question 1-->
+    <h3>Choose a Movie Genre:</h3>
+    <input type="radio" name="genre" value="romance" id="rom" checked>
     <label for="romance">Romance only!</label><br>
-    <input type="radio" name="genre" value="comedy" id="com">
-    <label for="comedy">Comedy is the key to my heart!</label><br>
-
-    <h3>Pick a Season:</h3>
-    <input type="radio" name="season" value="spring" id="spr">
-    <label for="spring">Spring vibes only.</label><br>
+    <input type="radio" name="genre" value="scifi" id="sci">
+    <label for="scifi">Sci-Fi is the key to my heart!</label><br>
+    <!--Question 2-->
+    <h3>Choose a Season:</h3>
+    <input type="radio" name="season" value="winter" id="win">
+    <label for="winter">Winter vibes only!</label><br>
     <input type="radio" name="season" value="summer" id="sum">
     <label for="summer">Summer Summer Summer!</label><br>
-
+    <!--Question 3-->
     <h3>Choose a Food:</h3>
     <input type="radio" name="food" value="pizza" id="piz">
     <label for="pizza">Pizza is my jam!</label><br>
-    <input type="radio" name="food" value="tacos" id="tac">
+    <input type="radio" name="food" value="sushi" id="sus">
     <label for="sushi">Sushi until I'm gone.</label><br>
-
-    <h3>Choose a Desert</h3>
+    <!--Question 4-->
+    <h3>Choose a Desert:</h3>
     <input type="radio" name="dessert" value="pie" id="pie">
-    <label for="pie">Pie for the win!</label><br>
+    <label for="pie">Pie for the Win!</label><br>
     <input type="radio" name="dessert" value="cake" id="cak">
     <label for="cake">Cake all day!</label><br>
-
-    <h3>If you had to pick a pet, which would it be?</h3>
+    <!--Question 5-->
+    <h3>Choose an Animal:</h3>
     <input type="radio" name="pet" value="dog" id="dog">
     <label for="dog">Dog (ruff ruff)</label><br>
-    <input type="radio" name="pet" value="cat" id="tar">
+    <input type="radio" name="pet" value="cat" id="cat">
     <label for="cat">Cat (OK, prrrrr)</label><br><br>
-
-    <button type="submit">Get my results!</button>
+    <!--Here is where my submit button will be-->
+    <button type="submit">Show My Results!</button>
   </form>
+
+    <!--Return responses to form inputs-->
+  <div id="python" class="hidden">
+    <h1>Python!</h1>
+    <p>Based on your selection, Python makes the most sense for you!</p>
+  </div>
+  <div id="ruby" class="hidden">
+    <h1>Ruby!</h1>
+    <p>Based on your choices, you'd be an amazing Ruby programmer!</p>
+  </div>
+  <div id="javascript" class="hidden">
+    <h1>Javascript!</h1>
+    <p>Based on what you entered, you'd be a Javascript genius!</p>
+  </div>
 
 </body>
 </html>

@@ -7,5 +7,7 @@ function handleRadio(event) {
 window.addEventListener("load", function() {
   document.getElementById("radio-form").addEventListener("submit", handleRadio);
 
-if ()
+  if ( romance && winter && pizza && pie && dog) {
+    if (romance === winter && winter === dog && dog === pie && pizza === cake) {
+      document.getElementById("python").removeAttribute("class");
 });
