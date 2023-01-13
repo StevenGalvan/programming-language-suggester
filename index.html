@@ -2,12 +2,14 @@
 <html lang="en-US">
   <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/scripts.js"></script>
   </head>
 <body>
-
-  <h1>Welcome to the Programming Language Suggestion Tool!</h1>
-  <p><em>Fill out the fields in the form below to see which programming language is the best for you. You must fill out all fields to get your results.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
+  
+  <div class="container">
+    <h1>Welcome to the Programming Language Suggestion Tool!</h1>
+    <p><em>Fill out the fields in the form below to see which programming language is the best for you. You must fill out all fields to get your results.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
 
   <div class="form">   
     <form id="form">
@@ -33,10 +35,12 @@
     <h1>Python!</h1>
     <p>Based on your answers, Python makes the most sense for you! Well done!</p>
   </div>
+
   <div id="ruby" class="hidden">
     <h1>Ruby!</h1>
     <p>Based on your answers, you'd be an amazing Ruby programmer! Well done!</p>
   </div>
+
   <div id="java" class="hidden">
     <h1>Javascript!</h1>
     <p>Based on what your answers, you'd be a Javascript genius! Well done!</p>

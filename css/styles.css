@@ -5,6 +5,7 @@
 h1 {
   color: #0000ff;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -25,4 +26,21 @@ ul {
 .form {
   font-size: 20px;
   line-height: 30px
+}
+
+body {
+  background-color: lightcyan;
+}
+
+.formfloatl {
+  float: left;
+}
+
+.formfloatr {
+  float: right;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
