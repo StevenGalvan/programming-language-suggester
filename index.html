@@ -5,62 +5,40 @@
     <script src="js/scripts.js"></script>
   </head>
 <body>
+
   <h1>Welcome to the Programming Language Suggestion Tool!</h1>
   <p><em>Fill out the fields in the form below to see which programming language is the best for you. Be sure to choose 1 option from each dropdown.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
 
-  <form id="radio-form">
-    <label>
-    <!--Question 1-->
-    <h3>Choose a Movie Genre:</h3>
-    <select id="movie">
-      <option></option>
-      <option value="3">Action</option>
-      <option value="1">Comedy</option>
-    </select>
-    <!--Question 2-->
-    <h3>Choose a Season:</h3>
-    <select id="season">
-      <option></option>
-      <option value="1">Winter</option>
-      <option value="0">Summer</option>
-    </select>
-    <!--Question 3-->
-    <h3>Choose a Food:</h3>
-    <select id="food">
-      <option></option>
-      <option value="2">Pizza</option>
-      <option value="1">Sushi</option>
-    </select>
-    <!--Question 4-->
-    <h3>Choose a Desert:</h3>
-    <select id="dessert">
-      <option></option>
-      <option value="0">Pie</option>
-      <option value="1">Cake</option>
-    </select>
-    <!--Question 5-->
-    <h3>Choose an Animal:</h3>
-    <select id="food">
-      <option></option>
-      <option value="0">Dog</option>
-      <option value="1">Cat</option>
-    </select><br><br>
-    <!--Here is where my submit button will be-->
+  <form id="form">
+    <p id="error-message" class="hidden"><You must answer all questions in order to get your results!</p>
+    <!--Questions-->
+    <form id="form">
+    <p id="error-message" class="hidden">Please answer the following questions to get your results!</p>
+    <label for="answer1">How many moons are there in the galaxy?</label>
+    <input id="answer1" type="number" name="answer1Input"><br><br>
+    <label for="answer2">The number of suns in our solar system is:</label>
+    <input id="answer2" type="number"><br><br>
+    <label for="answer3">How many types of planets are there?</label>
+    <input id="answer3" type="number"><br><br>
+    <label for="answer4">Complete this movie title: "__" Dalmations (hint: it's a numerical answer):</label>
+    <input id="answer4" type="number"><br><br>
+    <label for="answer5">How many grains of sand on earth?</label>
+    <input id="answer5" type="number"><br><br>
     <button type="submit">Show My Results!</button>
   </form>
 
     <!--Return responses to form inputs-->
   <div id="python" class="hidden">
     <h1>Python!</h1>
-    <p>Based on your selection, Python makes the most sense for you!</p>
+    <p>Based on your answers, Python makes the most sense for you! Well done!</p>
   </div>
   <div id="ruby" class="hidden">
     <h1>Ruby!</h1>
-    <p>Based on your choices, you'd be an amazing Ruby programmer!</p>
+    <p>Based on your answers, you'd be an amazing Ruby programmer! Well done!</p>
   </div>
-  <div id="javascript" class="hidden">
+  <div id="java" class="hidden">
     <h1>Javascript!</h1>
-    <p>Based on what you entered, you'd be a Javascript genius!</p>
+    <p>Based on what your answers, you'd be a Javascript genius! Well done!</p>
   </div>
 
 </body>

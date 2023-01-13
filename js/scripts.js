@@ -1,13 +1,32 @@
 //Business Logic
-function handleRadio(event) {
-  event.preventDefault();
-  const radioSelection = document.querySelector("input[name='hor']:checked").value;
+function hideResultsAndError() {
+  document.getElementById("error-message").setAttribute("class", "hidden");
+  document.getElementById("ruby").setAttribute("class", "hidden");
+  document.getElementById("python").setAttribute("class", "hidden");
+  document.getElementById("java").setAttribute("class", "hidden");
 }
+window.onload = function() {
+  hideResultsAndError();
 
-window.addEventListener("load", function() {
-  document.getElementById("radio-form").addEventListener("submit", handleRadio);
-
-  if ( romance && winter && pizza && pie && dog) {
-    if (romance === winter && winter === dog && dog === pie && pizza === cake) {
+  document.querySelector("form").onsubmit = function(event) {
+    event.preventDefault();
+    hideResultsAndError();
+    const answer1 = parseInt(document.querySelector("input#answer1").value);
+    const answer2 = parseInt(document.querySelector("input#answer2").value);
+    const answer3 = parseInt(document.querySelector("input#answer3").value);
+    const answer4 = parseInt(document.querySelector("input#answer4").value);
+    const answer5 = parseInt(document.querySelector("input#answer5").value);
+  
+  if ( answer1 && answer2 && answer3 && answer4 && answer5) {
+    if (answer1 >= 2000 && answer4 === 100) {
+      document.getElementById("ruby").removeAttribute("class");
+    } else if (answer2 === 1 && answer5 >100) {
       document.getElementById("python").removeAttribute("class");
-});
+    } else if (answer3 >= 10) {
+    document.getElementById("java").removeAttribute("class");
+    } 
+    } else {
+      document.getElementById("error-message").removeAttribute("class");
+    }
+  }; 
+}; 
