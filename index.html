@@ -7,26 +7,27 @@
 <body>
 
   <h1>Welcome to the Programming Language Suggestion Tool!</h1>
-  <p><em>Fill out the fields in the form below to see which programming language is the best for you. Be sure to choose 1 option from each dropdown.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
+  <p><em>Fill out the fields in the form below to see which programming language is the best for you. You must fill out all fields to get your results.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
 
-  <form id="form">
-    <p id="error-message" class="hidden"><You must answer all questions in order to get your results!</p>
-    <!--Questions-->
+  <div class="form">   
     <form id="form">
-    <p id="error-message" class="hidden">Please answer the following questions to get your results!</p>
-    <label for="answer1">How many moons are there in the galaxy?</label>
-    <input id="answer1" type="number" name="answer1Input"><br><br>
-    <label for="answer2">The number of suns in our solar system is:</label>
-    <input id="answer2" type="number"><br><br>
-    <label for="answer3">How many types of planets are there?</label>
-    <input id="answer3" type="number"><br><br>
-    <label for="answer4">Complete this movie title: "__" Dalmations (hint: it's a numerical answer):</label>
-    <input id="answer4" type="number"><br><br>
-    <label for="answer5">How many grains of sand on earth?</label>
-    <input id="answer5" type="number"><br><br>
-    <button type="submit">Show My Results!</button>
-  </form>
-
+      <p id="error-message" class="hidden" style="color:red;">You must answer all questions in order to get your results!</p>
+      <!--Questions-->
+      <form id="form">
+      <p id="error-message" class="hidden">Please answer the following questions to get your results!</p>
+      <label for="answer1">How many moons are there in the galaxy?</label>
+      <input id="answer1" type="number" name="answer1Input"><br><br>
+      <label for="answer2">The number of suns in our solar system is:</label>
+      <input id="answer2" type="number"><br><br>
+      <label for="answer3">How many types of planets are there?</label>
+      <input id="answer3" type="number"><br><br>
+      <label for="answer4">Complete this movie title: "__" Dalmations (hint: It's a numerical Disney answer):</label>
+      <input id="answer4" type="number"><br><br>
+      <label for="answer5">How many grains of sand on earth?</label>
+      <input id="answer5" type="number"><br><br>
+      <button type="submit">Show My Results!</button><br><br>
+    </form>
+  </div>
     <!--Return responses to form inputs-->
   <div id="python" class="hidden">
     <h1>Python!</h1>
