@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/scripts.js"></script>
   </head>
 <body>
   
-  <div class="container">
+  <div class="container my-5">
     <h1>Welcome to the Programming Language Suggestion Tool!</h1>
     <p><em>Fill out the fields in the form below to see which programming language is the best for you. You must fill out all fields to get your results.<br><br>Based on your answers you'll find out whether you're a good fit for Javascript, Python, or the Ruby programming language.</em></p>
-
-  <div class="form">   
-    <form id="form">
-      <p id="error-message" class="hidden" style="color:red;">You must answer all questions in order to get your results!</p>
-      <!--Questions-->
+  
+    <div class="form">   
       <form id="form">
-      <p id="error-message" class="hidden">Please answer the following questions to get your results!</p>
-      <label for="answer1">How many moons are there in the galaxy?</label>
-      <input id="answer1" type="number" name="answer1Input"><br><br>
-      <label for="answer2">The number of suns in our solar system is:</label>
-      <input id="answer2" type="number"><br><br>
-      <label for="answer3">How many types of planets are there?</label>
-      <input id="answer3" type="number"><br><br>
-      <label for="answer4">Complete this movie title: "__" Dalmations (hint: It's a numerical Disney answer):</label>
-      <input id="answer4" type="number"><br><br>
-      <label for="answer5">How many grains of sand on earth?</label>
-      <input id="answer5" type="number"><br><br>
-      <button type="submit">Show My Results!</button><br><br>
-    </form>
-  </div>
+        <p id="error-message" class="hidden" style="color:red;">You must answer all questions in order to get your results!</p>
+        <!--Questions-->
+        <form id="form">
+        <p id="error-message" class="hidden">Please answer the following questions to get your results!</p>
+        <label for="answer1">How many moons are there in the galaxy?</label>
+        <input id="answer1" type="number" name="answer1Input"><br><br>
+        <label for="answer2">The number of suns in our solar system is:</label>
+        <input id="answer2" type="number"><br><br>
+        <label for="answer3">How many types of planets are there?</label>
+        <input id="answer3" type="number"><br><br>
+        <label for="answer4">Complete this movie title: "__" Dalmations (hint: It's a numerical Disney answer):</label>
+        <input id="answer4" type="number"><br><br>
+        <label for="answer5">How many grains of sand on earth?</label>
+        <input id="answer5" type="number"><br><br>
+        <button type="submit">Show My Results!</button><br><br>
+      </form>
+    </div>
     <!--Return responses to form inputs-->
-  <div id="python" class="hidden">
-    <h1>Python!</h1>
-    <p>Based on your answers, Python makes the most sense for you! Well done!</p>
-  </div>
+    <div class="answers">
+      <div id="python" class="hidden">
+        <h1>Python!</h1>
+        <p>Based on your answers, Python makes the most sense for you! Well done!</p>
+        </div>
 
-  <div id="ruby" class="hidden">
-    <h1>Ruby!</h1>
-    <p>Based on your answers, you'd be an amazing Ruby programmer! Well done!</p>
-  </div>
+      <div id="ruby" class="hidden">
+        <h1>Ruby!</h1>
+        <p>Based on your answers, you'd be an amazing Ruby programmer! Well done!</p>
+      </div>
 
-  <div id="java" class="hidden">
-    <h1>Javascript!</h1>
-    <p>Based on what your answers, you'd be a Javascript genius! Well done!</p>
-  </div>
+      <div id="java" class="hidden">
+        <h1>Javascript!</h1>
+        <p>Based on what your answers, you'd be a Javascript genius! Well done!</p>
+      </div>
+    </div> 
+  </div>  
 
 </body>
 </html>
