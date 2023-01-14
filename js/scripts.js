@@ -18,7 +18,7 @@ window.onload = function() {
     const answer5 = parseInt(document.querySelector("input#answer5").value);
   
   if ( answer1 && answer2 && answer3 && answer4 && answer5) {
-    if (answer1 >= 2000 && answer4 === 101) {
+    if (answer1 <= 2000 && answer4 === 101) {
       document.getElementById("ruby").removeAttribute("class");
     } else if (answer2 === 1 && answer5 >100) {
       document.getElementById("python").removeAttribute("class");
