@@ -1,16 +1,15 @@
 //Business Logic
-function hideResultsAndError() {
+function hideResults() {
   document.getElementById("error-message").setAttribute("class", "hidden");
   document.getElementById("ruby").setAttribute("class", "hidden");
   document.getElementById("python").setAttribute("class", "hidden");
   document.getElementById("java").setAttribute("class", "hidden");
 }
-window.onload = function() {
-  hideResultsAndError();
 
+window.onload = function() {
   document.querySelector("form").onsubmit = function(event) {
     event.preventDefault();
-    hideResultsAndError();
+    hideResults();
     const answer1 = parseInt(document.querySelector("input#answer1").value);
     const answer2 = parseInt(document.querySelector("input#answer2").value);
     const answer3 = parseInt(document.querySelector("input#answer3").value);
@@ -26,7 +25,7 @@ window.onload = function() {
     document.getElementById("java").removeAttribute("class");
     } 
     } else {
-      document.getElementById("error-message").removeAttribute("class");
-    }
+        document.getElementById("error-message").removeAttribute("class");
+    }  
   }; 
 }; 
