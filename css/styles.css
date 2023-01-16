@@ -29,7 +29,7 @@ ul {
 }
 
 body {
-  background-color: lightcyan;
+  background-color: lightblue;
 }
 
 .answers {
@@ -40,4 +40,8 @@ body {
   background-color: #4CAF50;
   color: white;
   border: 3px solid #4CAF50;
+}
+
+div {
+  background-color: lightblue;
 }

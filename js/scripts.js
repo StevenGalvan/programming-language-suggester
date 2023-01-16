@@ -7,7 +7,8 @@ function hideResults() {
 }
 
 window.onload = function() {
-  document.querySelector("form").onsubmit = function(event) {
+  let form = document.querySelector("form")
+  form.onsubmit = function(event) {
     event.preventDefault();
     hideResults();
     const answer1 = parseInt(document.querySelector("input#answer1").value);
