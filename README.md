@@ -23,7 +23,7 @@ _It's hard enough choosing which programming language to learn. That's where the
 
 ## Known Bugs
 
-* _Language Suggestion not populating when fields are entered. (I plan to work out the logic so that any answer generates a language suggestion!)_
+* _Language Suggestion not populating when some fields are filled out. (I plan to work out the logic so that any answer generates a language suggestion!)_
 
 ## License
 
